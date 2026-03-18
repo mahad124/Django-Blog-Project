@@ -2,6 +2,8 @@
 
 This repository is a **beginner-to-intermediate Django learning project** structured as a small blog application with authentication and user profiles. It’s intentionally simple (SQLite, local dev defaults) but includes a few “real app” concerns like password reset email, middleware, and logging.
 
+![til](https://github.com/mahad124/Django-Blog-Project/blob/dev/myproject/media/cover.gif)
+
 ## Scope / features
 
 - **Blog posts**: list/detail + CRUD via Django class-based views, author ownership enforcement.
@@ -76,7 +78,7 @@ Password reset endpoints are wired in `myproject/myproject/urls.py`. SMTP is cur
 
 - If you want password reset to work, set **valid** values for:
   - `EMAIL_HOST_USER`
-  - `EMAIL_HOST_PASSWORD` (Gmail *App Password* if using Gmail)
+  - `EMAIL_HOST_PASSWORD` (Gmail _App Password_ if using Gmail)
 - If you don’t need email during local dev, you can switch to the console backend:
 
 ```python
